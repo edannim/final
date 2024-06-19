@@ -15,6 +15,7 @@ public class Final extends JFrame {
         setSize(500, 400);; // [문제3] 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // [문제4] 
         setLocationRelativeTo(null);
+        
 
         // 패널 생성
         JPanel panel = new JPanel();
@@ -41,15 +42,14 @@ public class Final extends JFrame {
             }
             System.out.println();
        }
-        // [문제5] 구구단을 2단에서 9단까지 출력할 수 있도록 반복문을 작성하세요.
-        // 각 단마다 빈 줄을 추가해 주세요.
+      
     }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Final(); // [문제6] 결과 화면의 윈도우를 출력해 주세요.
+                new Final(); // [문제6] 윈도우를 출력.
             } 
         });
     }
